@@ -1,7 +1,7 @@
 /*
  * @Author: Victor
  * @Date: 2024-03-11 17:40:50
- * @LastEditTime: 2024-03-11 17:40:52
+ * @LastEditTime: 2024-03-11 20:38:58
  */
 
 import { PrismaClient } from '@prisma/client'
