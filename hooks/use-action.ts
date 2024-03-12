@@ -1,3 +1,8 @@
+/*
+ * @Author: Victor
+ * @Date: 2024-03-11 15:01:34
+ * @LastEditTime: 2024-03-12 14:32:12
+ */
 import { useState, useCallback } from "react";
 
 import { ActionState, FieldErrors } from "@/lib/create-safe-action";
@@ -10,7 +15,7 @@ interface UseActionOptions<TOutput> {
   onComplete?: () => void;
 };
 
-export const useAction = <TInput, TOutput> (
+export const useAction = <TInput, TOutput>(
   action: Action<TInput, TOutput>,
   options: UseActionOptions<TOutput> = {}
 ) => {
