@@ -1,7 +1,7 @@
 /*
  * @Author: Victor
  * @Date: 2024-03-17 10:36:41
- * @LastEditTime: 2024-03-17 10:36:42
+ * @LastEditTime: 2024-03-18 13:51:21
  */
 "use client";
 
@@ -69,7 +69,7 @@ export const FormPicker = ({
     <div className="relative">
       <div className="grid grid-cols-3 gap-2 mb-2">
         {images.map((image) => (
-          <div 
+          <div
             key={image.id}
             className={cn(
               "cursor-pointer relative aspect-video group hover:opacity-75 transition bg-muted",
@@ -80,7 +80,7 @@ export const FormPicker = ({
               setSelectedImageId(image.id);
             }}
           >
-            <input 
+            <input
               type="radio"
               id={id}
               name={id}
@@ -93,14 +93,14 @@ export const FormPicker = ({
               src={image.urls.thumb}
               alt="Unsplash image"
               className="object-cover rounded-sm"
-              fill  
+              fill
             />
             {selectedImageId === image.id && (
               <div className="absolute inset-y-0 h-full w-full bg-black/30 flex items-center justify-center">
                 <Check className="h-4 w-4 text-white" />
               </div>
             )}
-            <Link 
+            <Link
               href={image.links.html}
               target="_blank"
               className="opacity-0 group-hover:opacity-100 absolute bottom-0 w-full text-[10px] truncate text-white hover:underline p-1 bg-black/50"

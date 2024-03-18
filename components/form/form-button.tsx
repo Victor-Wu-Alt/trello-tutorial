@@ -1,7 +1,7 @@
 /*
  * @Author: Victor
  * @Date: 2024-03-17 00:09:19
- * @LastEditTime: 2024-03-17 00:17:58
+ * @LastEditTime: 2024-03-18 14:50:25
  */
 
 
@@ -23,7 +23,7 @@ export const FormButton = (
 		children,
 		disabled,
 		className,
-		variant
+		variant = 'primary'
 	}: FormButtonProps) => {
 	const { pending } = useFormStatus()
 	return (

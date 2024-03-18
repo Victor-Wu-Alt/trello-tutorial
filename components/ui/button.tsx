@@ -1,7 +1,7 @@
 /*
  * @Author: Victor
  * @Date: 2024-03-08 18:39:07
- * @LastEditTime: 2024-03-09 16:19:16
+ * @LastEditTime: 2024-03-18 18:03:07
  */
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
@@ -24,6 +24,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         primary: 'bg-sky-700 text-primary-foreground hover:bg-sky-800/90',
+        transparent: "bg-transparent text-white hover:bg-white/20",
       },
       size: {
         default: "h-10 px-4 py-2",
