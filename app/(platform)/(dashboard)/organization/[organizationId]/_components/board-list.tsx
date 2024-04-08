@@ -1,7 +1,7 @@
 /*
  * @Author: Victor
  * @Date: 2024-03-17 09:33:40
- * @LastEditTime: 2024-03-18 16:46:51
+ * @LastEditTime: 2024-04-08 16:56:05
  */
 
 import { FormPopover } from "@/components/form/form-popover"
@@ -71,7 +71,6 @@ export const BoardList = async () => {
 		</div>
 	)
 }
-
 
 BoardList.Skeleton = function BoardListSkeleton() {
 	return (
